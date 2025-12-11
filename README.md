@@ -34,16 +34,6 @@ Simple local automation
   bash scripts/run_all.sh        # runs the two main scenarios via waf (assumes you're in ns-3 top)
   bash scripts/parse_and_plot.sh # parse and plot (expects prasadma_4_flow.xml and prasadma.dat)
 
-Push to GitHub (recommended flow)
-- Option 1 (using gh CLI):
-    git init
-    git add .
-    git commit -m "Initial commit: ns-3 examples + plots"
-    gh repo create my-ns3-experiments --public --source=. --remote=origin --push
-
-- Option 2 (manual web UI):
-    1. Create a new repo on github.com.
-    2. Follow the "…or push an existing repository from the command line" commands provided by GitHub.
 
 Notes
 - parse_flows.sh now uses FlowProbe points when present and creates a richer prasadma_flowN.dat time-series for plotting.
