@@ -1,6 +1,10 @@
 ```text
 # ns-3 Experiments Collection
-
+A small collection of ns-3 example simulations, a tiny helper application, parsing/plotting scripts, and NetAnim/FlowMonitor outputs used to study:
+UDP flows over a small mesh of point-to-point links (flow characterization with FlowMonitor).
+TCP behavior (congestion window tracing).
+CSMA + Wi‑Fi + P2P combined examples (from the other example scripts).
+It includes automation to extract flow/bytes/time data from FlowMonitor XML and create publication-ready plots (gnuplot), and a GitHub Actions workflow to run the parser+plot on push.
 This repository collects several ns-3 example simulations, helper code and plotting scripts used to produce traces and figures (NetAnim XML, FlowMonitor XML, pcap/ascii traces, and gnuplot PNGs).
 
 Quick contents
