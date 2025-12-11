@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<FlowMonitor>
+  <FlowStats>
+    <Flow flowId="1" timeFirstTxPacket="+2.01714e+09ns" timeFirstRxPacket="+2.0445e+09ns" timeLastTxPacket="+8e+09ns" timeLastRxPacket="+8.02735e+09ns" delaySum="+9.57925e+09ns" jitterSum="+1.01716e+07ns" lastDelay="+2.73547e+07ns" maxDelay="+3.00024e+07ns" minDelay="+0ns" txBytes="534800" rxBytes="534800" txPackets="350" rxPackets="350" lostPackets="0" timesForwarded="0">
+      <delayHistogram nBins="1" >
+        <bin index="0" start="0" width="0.1" count="350" />
+      </delayHistogram>
+      <jitterHistogram nBins="1" >
+        <bin index="0" start="0" width="0.1" count="349" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="77" >
+        <bin index="76" start="1520" width="20" count="350" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+    <Flow flowId="2" timeFirstTxPacket="+4.20667e+09ns" timeFirstRxPacket="+4.26461e+09ns" timeLastTxPacket="+8.96e+09ns" timeLastRxPacket="+9.01794e+09ns" delaySum="+1.39099e+09ns" jitterSum="+709428ns" lastDelay="+5.79433e+07ns" maxDelay="+5.8298e+07ns" minDelay="+0ns" txBytes="372672" rxBytes="372672" txPackets="24" rxPackets="24" lostPackets="0" timesForwarded="0">
+      <delayHistogram nBins="1" >
+        <bin index="0" start="0" width="0.1" count="24" />
+      </delayHistogram>
+      <jitterHistogram nBins="1" >
+        <bin index="0" start="0" width="0.1" count="23" />
+      </jitterHistogram>
+      <packetSizeHistogram nBins="777" >
+        <bin index="776" start="15520" width="20" count="24" />
+      </packetSizeHistogram>
+      <flowInterruptionsHistogram nBins="0" >
+      </flowInterruptionsHistogram>
+    </Flow>
+  </FlowStats>
+  <Ipv4FlowClassifier>
+    <Flow flowId="1" sourceAddress="88.77.66.1" destinationAddress="88.77.66.2" protocol="17" sourcePort="49153" destinationPort="8001">
+      <Dscp value="0x0" packets="350" />
+    </Flow>
+    <Flow flowId="2" sourceAddress="88.77.66.1" destinationAddress="88.77.99.2" protocol="17" sourcePort="49154" destinationPort="8002">
+      <Dscp value="0x0" packets="24" />
+    </Flow>
+  </Ipv4FlowClassifier>
+  <Ipv6FlowClassifier>
+  </Ipv6FlowClassifier>
+  <FlowProbes>
+    <FlowProbe index="0">
+      <FlowStats  flowId="1" packets="350" bytes="534800" delayFromFirstProbeSum="+0ns" >
+      </FlowStats>
+      <FlowStats  flowId="2" packets="24" bytes="372672" delayFromFirstProbeSum="+0ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="1">
+    </FlowProbe>
+    <FlowProbe index="2">
+      <FlowStats  flowId="1" packets="350" bytes="534800" delayFromFirstProbeSum="+9.57925e+09ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="3">
+    </FlowProbe>
+    <FlowProbe index="4">
+    </FlowProbe>
+    <FlowProbe index="5">
+    </FlowProbe>
+    <FlowProbe index="6">
+      <FlowStats  flowId="2" packets="24" bytes="372672" delayFromFirstProbeSum="+1.39099e+09ns" >
+      </FlowStats>
+    </FlowProbe>
+    <FlowProbe index="7">
+    </FlowProbe>
+  </FlowProbes>
+</FlowMonitor>
